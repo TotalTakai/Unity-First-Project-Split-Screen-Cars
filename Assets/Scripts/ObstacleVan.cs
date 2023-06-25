@@ -5,16 +5,10 @@ using UnityEngine;
 public class ObstacleVan : MonoBehaviour
 {
     //variables
-    private float speed = 12.0f;
+    private const float speed = 12.0f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
     }
